@@ -15,6 +15,10 @@
 		D0B206E91A99C6A9005B91E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B206E81A99C6A9005B91E2 /* Images.xcassets */; };
 		D0B206EC1A99C6A9005B91E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B206EA1A99C6A9005B91E2 /* LaunchScreen.xib */; };
 		D0B206F81A99C6A9005B91E2 /* segueTesterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B206F71A99C6A9005B91E2 /* segueTesterTests.m */; };
+		D0B207051A99C837005B91E2 /* BGSSegueLeftArcWave.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B207041A99C837005B91E2 /* BGSSegueLeftArcWave.m */; };
+		D0B2070A1A99C951005B91E2 /* BGSMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B207091A99C951005B91E2 /* BGSMainVC.m */; };
+		D0B2070D1A99C981005B91E2 /* BGSSecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B2070C1A99C981005B91E2 /* BGSSecondVC.m */; };
+		D0B207101A9A4A43005B91E2 /* BGSTransitionLeftArcWave.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B2070F1A9A4A43005B91E2 /* BGSTransitionLeftArcWave.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,14 @@
 		D0B206F11A99C6A9005B91E2 /* segueTesterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = segueTesterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B206F61A99C6A9005B91E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0B206F71A99C6A9005B91E2 /* segueTesterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = segueTesterTests.m; sourceTree = "<group>"; };
+		D0B207031A99C837005B91E2 /* BGSSegueLeftArcWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGSSegueLeftArcWave.h; path = customSegues/LeftArcWave/BGSSegueLeftArcWave.h; sourceTree = "<group>"; };
+		D0B207041A99C837005B91E2 /* BGSSegueLeftArcWave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGSSegueLeftArcWave.m; path = customSegues/LeftArcWave/BGSSegueLeftArcWave.m; sourceTree = "<group>"; };
+		D0B207081A99C951005B91E2 /* BGSMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGSMainVC.h; path = GUI/BGSMainVC.h; sourceTree = "<group>"; };
+		D0B207091A99C951005B91E2 /* BGSMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGSMainVC.m; path = GUI/BGSMainVC.m; sourceTree = "<group>"; };
+		D0B2070B1A99C980005B91E2 /* BGSSecondVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGSSecondVC.h; path = GUI/BGSSecondVC.h; sourceTree = "<group>"; };
+		D0B2070C1A99C981005B91E2 /* BGSSecondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGSSecondVC.m; path = GUI/BGSSecondVC.m; sourceTree = "<group>"; };
+		D0B2070E1A9A4A43005B91E2 /* BGSTransitionLeftArcWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGSTransitionLeftArcWave.h; path = customSegues/LeftArcWave/BGSTransitionLeftArcWave.h; sourceTree = "<group>"; };
+		D0B2070F1A9A4A43005B91E2 /* BGSTransitionLeftArcWave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGSTransitionLeftArcWave.m; path = customSegues/LeftArcWave/BGSTransitionLeftArcWave.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +77,7 @@
 		D0B206CC1A99C6A9005B91E2 = {
 			isa = PBXGroup;
 			children = (
+				D0B207061A99C8A4005B91E2 /* StoryBoards */,
 				D0B206D71A99C6A9005B91E2 /* segueTester */,
 				D0B206F41A99C6A9005B91E2 /* segueTesterTests */,
 				D0B206D61A99C6A9005B91E2 /* Products */,
@@ -83,11 +96,12 @@
 		D0B206D71A99C6A9005B91E2 /* segueTester */ = {
 			isa = PBXGroup;
 			children = (
+				D0B207071A99C912005B91E2 /* GUI */,
+				D0B207011A99C77A005B91E2 /* customSegues */,
 				D0B206DC1A99C6A9005B91E2 /* AppDelegate.h */,
 				D0B206DD1A99C6A9005B91E2 /* AppDelegate.m */,
 				D0B206E21A99C6A9005B91E2 /* ViewController.h */,
 				D0B206E31A99C6A9005B91E2 /* ViewController.m */,
-				D0B206E51A99C6A9005B91E2 /* Main.storyboard */,
 				D0B206E81A99C6A9005B91E2 /* Images.xcassets */,
 				D0B206EA1A99C6A9005B91E2 /* LaunchScreen.xib */,
 				D0B206DF1A99C6A9005B91E2 /* segueTester.xcdatamodeld */,
@@ -120,6 +134,44 @@
 				D0B206F61A99C6A9005B91E2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0B207011A99C77A005B91E2 /* customSegues */ = {
+			isa = PBXGroup;
+			children = (
+				D0B207021A99C789005B91E2 /* LeftArcWave */,
+			);
+			name = customSegues;
+			sourceTree = "<group>";
+		};
+		D0B207021A99C789005B91E2 /* LeftArcWave */ = {
+			isa = PBXGroup;
+			children = (
+				D0B207031A99C837005B91E2 /* BGSSegueLeftArcWave.h */,
+				D0B207041A99C837005B91E2 /* BGSSegueLeftArcWave.m */,
+				D0B2070E1A9A4A43005B91E2 /* BGSTransitionLeftArcWave.h */,
+				D0B2070F1A9A4A43005B91E2 /* BGSTransitionLeftArcWave.m */,
+			);
+			name = LeftArcWave;
+			sourceTree = "<group>";
+		};
+		D0B207061A99C8A4005B91E2 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				D0B206E51A99C6A9005B91E2 /* Main.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		D0B207071A99C912005B91E2 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				D0B207081A99C951005B91E2 /* BGSMainVC.h */,
+				D0B207091A99C951005B91E2 /* BGSMainVC.m */,
+				D0B2070B1A99C980005B91E2 /* BGSSecondVC.h */,
+				D0B2070C1A99C981005B91E2 /* BGSSecondVC.m */,
+			);
+			name = GUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,10 +274,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B207101A9A4A43005B91E2 /* BGSTransitionLeftArcWave.m in Sources */,
 				D0B206E11A99C6A9005B91E2 /* segueTester.xcdatamodeld in Sources */,
 				D0B206DE1A99C6A9005B91E2 /* AppDelegate.m in Sources */,
+				D0B2070A1A99C951005B91E2 /* BGSMainVC.m in Sources */,
 				D0B206E41A99C6A9005B91E2 /* ViewController.m in Sources */,
+				D0B2070D1A99C981005B91E2 /* BGSSecondVC.m in Sources */,
 				D0B206DB1A99C6A9005B91E2 /* main.m in Sources */,
+				D0B207051A99C837005B91E2 /* BGSSegueLeftArcWave.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +310,7 @@
 				D0B206E61A99C6A9005B91E2 /* Base */,
 			);
 			name = Main.storyboard;
+			path = segueTester;
 			sourceTree = "<group>";
 		};
 		D0B206EA1A99C6A9005B91E2 /* LaunchScreen.xib */ = {
@@ -350,6 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = segueTester/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -360,6 +418,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = segueTester/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
